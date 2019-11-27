@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
+    <title>HouseToken</title>
+    <style>
+      #startLoading {
+          background: #fff;
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          z-index: 9999999;
+      }
+
+      .loader {
+          border: 6px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 6px solid #00a99e;
+          width: 50px;
+          height: 50px;
+          -webkit-animation: spin .7s linear infinite;
+          animation: spin .7s linear infinite;
+          position: absolute;
+          margin: auto;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          z-index: 99999;
+      }
+      @keyframes spin{
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but rewardhunter doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <!-- <div class="loading" id="startLoading" style="z-index: 99999"></div> -->
+    <div id="app">
+        <div class=loading id=startLoading><div class=loader></div></div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
